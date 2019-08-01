@@ -1,0 +1,27 @@
+.but
+{
+    color :rgb(8, 8, 8);
+}
+.main
+{
+    width : 100%;
+    height: 50px;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    
+    text-align: CENTER;
+    background-color: rgb(204, 22, 131);
+}
+
+h1
+{
+    border: 2px solid grey;
+    background-color: aquamarine;
+}
+
+table
+{
+    width: 100%;
+    background-color: aliceblue;
+    
+}

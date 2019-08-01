@@ -1,0 +1,32 @@
+
+<div class="main">
+<input type="text" placeholder="Search valid stocks(google, microsoft, facebook)" size ="130" maxlength="20" #newNote>
+<button type="button" class="but" (click) = "setStocks(newNote.value)">Search</button>
+
+
+<div class="currentStock">
+    <table border="2">
+      <tr *ngIf="current_stock !== undefined">
+        <td>{{this.current_stock.name}}</td>
+        <td *ngFor="let p of this.current_stock.price">{{p}}</td>
+      </tr>
+    </table>
+</div>
+
+<br>
+<br>
+<br>
+<div class="pastStock">
+    <h1> Past Searches</h1>
+ 
+    <table border="2">
+     <tr *ngFor="let past of this.past_stocks">
+       <td>{{past.name}}</td>
+       <td>{{past.search_time}}</td>
+       <td *ngFor="let c of past.price">{{c}}</td>
+     </tr>
+    </table>
+</div>
+
+
+
